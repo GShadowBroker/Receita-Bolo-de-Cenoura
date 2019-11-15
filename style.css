@@ -1,0 +1,343 @@
+/*-----------------GENERAL-----------------*/
+html {
+    margin: 0 auto;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Supermercado One', cursive;
+    font-size: 22pt;
+    text-shadow: 1px 2px 6px black;
+    margin: 0;
+    height: 100%;
+
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+h3::first-letter {
+    color: yellow;
+    font-size: 1.5em;
+}
+main {
+    background-color: tomato;
+}
+/*-----------------HEADER-----------------*/
+.header_img {
+    padding: 0.1px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: block;
+
+    color: tomato;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40pt;
+    text-shadow: 4px 4px 10px black;
+    text-align: end;
+    align-items: baseline;
+    justify-content: center;
+
+    height: 100vh;
+    margin: 0;
+}
+.header_img {
+    background-image: url("Images/bolo-de-cenoura.jpg");
+    min-height: 100%;
+    background-size: auto;
+}
+.faixa_transparente {
+    width: 100%;
+    margin-top: 140px;
+
+    background-color: rgb(8, 8, 8);
+    opacity: 0.6;
+}
+    .faixa_transparente h1 {
+        opacity: 1;
+    }
+.descrição_receita {
+    display: block;
+    position: relative;
+    bottom: 0;
+    overflow: visible;
+    padding: 40px 270px 60px 270px;
+    margin: 0;
+
+    color: white;
+    align-items: center;
+    text-align: justify;
+    font-size: 26pt;
+    background-color: tomato;
+}
+    .descrição_receita p::first-letter {
+        color: yellow;
+        font-size: 40pt;
+    }
+    #tempo_preparo {
+        position: relative;
+        display: inline-block;
+        
+        width: fit-content;
+        width: -moz-fit-content;
+    }
+    #rendimento {
+        position: relative;
+        display: inline-block;
+
+        width: fit-content;
+        width: -moz-fit-content;
+    }
+        #tempo_preparo img {
+            max-width: 60px;
+        }
+        #rendimento img {
+            max-width: 60px;
+        }
+
+/*----------------UTENSÍLIOS------------------*/
+
+.utensílios {
+    background-image: url(Images/utensílios.jpg);
+    height: 400px;
+}
+.utensílios,
+.header_img,
+.baking_img,
+.cobertura_img,
+.bolo_img {
+    position: relative;
+    background-color: white;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+.ingredientes {
+    display: block;
+    position: relative;
+    bottom: 0;
+    overflow: visible;
+    padding: 40px 270px 60px 270px;
+    margin: 0;
+
+    color: white;
+    align-items: center;
+    text-align: start;
+    font-size: 26pt;
+    background-color: tomato;
+}
+/*------------------BAKING--------------------*/
+
+.baking_img {
+    background-image: url(Images/ingredients_baking.jpg);
+    height: 400px;
+}
+.modo_preparo {
+    display: block;
+    position: relative;
+    bottom: 0;
+    overflow: visible;
+    padding: 40px 270px 60px 270px;
+    margin: 0;
+
+    color: white;
+    align-items: center;
+    text-align: justify;
+    font-size: 26pt;
+    background-color: tomato;
+}
+/*----------------Cobertura------------------*/
+.cobertura_img {
+    background-image: url(Images/chocolate.jpg);
+    height: 400px;
+}
+.cobertura {
+    display: block;
+    position: relative;
+    bottom: 0;
+    overflow: visible;
+    padding: 40px 270px 60px 270px;
+    margin: 0;
+
+    color: white;
+    align-items: center;
+    text-align: start;
+    font-size: 26pt;
+    background-color: tomato;
+}
+.bolo_img {
+    background-image: url(Images/bolodecenoura.jpg);
+    height: 400px;
+}
+.preparo_cobertura {
+    display: block;
+    position: relative;
+    bottom: 0;
+    overflow: visible;
+    padding: 40px 270px 100px 270px;
+    margin: 0;
+
+    color: white;
+    align-items: center;
+    text-align: justify;
+    font-size: 26pt;
+    background-color: tomato;
+}
+.preparo_cobertura #fonte {
+    display: block;
+    text-align: end;
+    position: absolute;
+    right: 270px;
+
+    transition: 0.5s;
+}
+    .preparo_cobertura #fonte:hover {
+        font-size: 1.15em;
+    }
+.preparo_cobertura a {
+    text-decoration: none;
+    color: yellow;
+}
+
+#back_to_top {
+    background-color: yellow;
+    
+    border-radius: 40px;
+    display: block;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    margin-left: 10%;
+
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 900;
+    color: tomato;
+    text-shadow: 3px 3px 6px black;
+
+    width: 0px; /*CODE BLOCK CHANGED IN JS*/
+    height: 0px;
+    border: none;
+
+    transition: 0.8s;
+}
+    #back_to_top:hover {
+        background-color: tomato;
+        border: 4px solid yellow;
+        color: yellow;
+    }
+
+/*-------------------FOOTER-----------------*/
+
+footer {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    text-align: end;
+    align-items: center;
+    align-content: center;
+    font-size: 12pt;
+
+    background-color: rgb(241, 72, 42);
+    opacity: 0.9;
+
+    padding: 25px;
+    min-height: 80px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+
+    transition: 0.5s;
+}
+footer a:hover {
+    color: rgb(228, 228, 83);
+}
+
+/*----------------MEDIA QUERY-----------------*/
+
+@media only screen and (max-width: 1000px) {
+    .descrição_receita,
+    .ingredientes,
+    .modo_preparo,
+    .cobertura,
+    .preparo_cobertura {
+        padding: 40px 100px 100px 100px;
+    }
+}
+@media only screen and (max-width: 700px) {
+
+    .faixa_transparente {
+        font-size: 30pt;
+    }
+
+    .descrição_receita,
+    .ingredientes,
+    .modo_preparo,
+    .cobertura,
+    .preparo_cobertura {
+        padding: 40px 40px 40px 40px;
+        font-size: 24pt;
+    }
+
+    .preparo_cobertura #fonte {
+        position: absolute;
+        right: 20%;
+    
+        transition: 0.5s;
+    }
+}
+@media only screen and (max-width: 601px) {
+
+    .faixa_transparente {
+        font-size: 24pt;
+    }
+
+    .descrição_receita,
+    .ingredientes,
+    .modo_preparo,
+    .cobertura,
+    .preparo_cobertura {
+        padding: 40px 40px 40px 40px;
+        font-size: 20pt;
+    }
+
+    .preparo_cobertura #fonte {
+        position: absolute;
+        right: 20%;
+    
+        transition: 0.5s;
+    }
+}
+@media only screen and (max-width: 440px) {
+
+    .faixa_transparente {
+        font-size: 20pt;
+        overflow: hidden;
+    }
+
+    .descrição_receita,
+    .ingredientes,
+    .modo_preparo,
+    .cobertura,
+    .preparo_cobertura {
+        padding: 40px 40px 40px 40px;
+        font-size: 18pt;
+    }
+
+    .preparo_cobertura #fonte {
+        position: absolute;
+        right: 20%;
+    
+        transition: 0.5s;
+    }
+}
